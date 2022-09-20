@@ -7,11 +7,17 @@ export default function ResumeItem({
   endMonth,
   endYear,
   highlights,
+  role,
   eventKey}) {
     const time = endMonth ? `${company} (${startMonth} ${startYear} - ${endMonth} ${endYear})` : `${company} (${startMonth} ${startYear} - Present)`
     return (
       <Accordion.Item eventKey={eventKey}>
-        <Accordion.Header>{time}</Accordion.Header>
+        <Accordion.Header>
+          <div style={{ display: 'block' }}>
+            <span>{time}</span><br/>
+            <span>{role}</span>
+          </div>
+          </Accordion.Header>
         <Accordion.Body>
           {highlights}
         </Accordion.Body>

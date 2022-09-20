@@ -38,7 +38,10 @@ export async function getStaticProps() {
       company: 'Viewpost',
       startMonth: 'July',
       startYear: '2022',
-      highlights: 'Working on viewpost'
+      role: 'Full Stack Developer',
+      highlights: [
+        'Member of the Viewpost development team'
+      ]
     }
   ];
 
