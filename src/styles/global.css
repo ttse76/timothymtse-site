@@ -15,3 +15,15 @@ body {
   font-size: 7rem;
   color: var(--color-main);
 }
+
+.tim-link {
+  text-decoration: none;
+  color: var(--color-main);
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  transition: 0.2s;
+}
+
+.tim-link:hover {
+  color: var(--color-main-hover);
+}
