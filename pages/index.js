@@ -43,6 +43,11 @@ export async function getStaticProps() {
       "text": "LinkedIn",
       "url": "https://www.linkedin.com/in/timothy-tse-723269103/",
       "newTab": true
+    },
+    {
+      "text": "Resume",
+      "url": "/resume",
+      "newTab": false
     }
   ];
 
