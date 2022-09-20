@@ -3,10 +3,22 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import CenterTextWrapper from 'components/style/CenterTextWrapper';
-import OutLink from 'components/elements/OutLink';
+import LinkBox from 'components/elements/LinkBox';
 import PageWrapper from 'components/document/PageWrapper';
 
 export default function Home() {
+  const links = [
+    {
+      text: 'GitHub',
+      url: 'https://github.com/ttse76',
+      newTab: true
+    },
+    {
+      text: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/timothy-tse-723269103/',
+      newTab: true
+    }
+  ];
   return (
     <PageWrapper>
       <Container>
@@ -23,11 +35,7 @@ export default function Home() {
           </Row>
           <Row>
             <Col>
-              <div style={{ textAlign: 'center' }}>
-              <span>
-                <OutLink href="https://github.com/ttse76">Github</OutLink>&nbsp;&nbsp;&nbsp;&nbsp;<OutLink href="https://www.linkedin.com/in/timothy-tse-723269103/">LinkedIn</OutLink>
-              </span>
-              </div>
+              <LinkBox links={links} />
             </Col>
           </Row>
         </CenterTextWrapper>
