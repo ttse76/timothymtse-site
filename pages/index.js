@@ -6,19 +6,7 @@ import CenterTextWrapper from 'components/style/CenterTextWrapper';
 import LinkBox from 'components/elements/LinkBox';
 import PageWrapper from 'components/document/PageWrapper';
 
-export default function Home() {
-  const links = [
-    {
-      text: 'GitHub',
-      url: 'https://github.com/ttse76',
-      newTab: true
-    },
-    {
-      text: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/timothy-tse-723269103/',
-      newTab: true
-    }
-  ];
+export default function Home({ links }) {
   return (
     <PageWrapper>
       <Container>
@@ -42,4 +30,25 @@ export default function Home() {
       </Container>
     </PageWrapper>
   )
+};
+
+export async function getStaticProps() {
+  const links = [
+    {
+      "text": "GitHub",
+      "url": "https://github.com/ttse76",
+      "newTab": true
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/in/timothy-tse-723269103/",
+      "newTab": true
+    }
+  ];
+
+  return {
+    props: {
+      links: links
+    }
+  }
 }
