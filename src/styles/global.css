@@ -1,3 +1,12 @@
 body {
   font-family: var(--font-text);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.page-header {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 7rem;
+  color: var(--color-main);
 }

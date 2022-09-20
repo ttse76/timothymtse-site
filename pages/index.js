@@ -7,7 +7,12 @@ export default function Home() {
     <Container>
       <Row>
         <Col>
-          <h1>Timothy M. Tse</h1>
+          <h1 className="page-header">Timothy M. Tse</h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <p style={{ textAlign: 'center', fontSize: '1.5rem' }}>Software Engineer based in Northern New Jersey</p>
         </Col>
       </Row>
     </Container>

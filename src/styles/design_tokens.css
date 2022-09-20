@@ -1,4 +1,8 @@
 :root {
   --font-display: 'Share Tech Mono', monospace;
   --font-text: 'Play', sans-serif;
+
+  --color-bg: #000;
+  --color-text: #fff;
+  --color-main: #2cd438;
 }
