@@ -1,0 +1,10 @@
+.card {
+  background-color: var(--color-bg);
+  border-color: var(--color-main);
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  color: var(--color-main);
+  font-size: 2rem;
+}
