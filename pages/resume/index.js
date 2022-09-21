@@ -56,7 +56,8 @@ export async function getStaticProps() {
       company: 'Datacor',
       startMonth: 'September',
       startYear: '2017',
-      endMonth: '2021',
+      endMonth: 'March',
+      endYear: '2021',
       role: 'Software Engineer',
       highlights: `Datacor is a vertal SaSS company, specializing in logisics and sales software for chemical companies. As a software
       engineer at Datacor, I was a member of the team developing and maintaining Datacor CRM, a CRM designed for chemcial companies. 
