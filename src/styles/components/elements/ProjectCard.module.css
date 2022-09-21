@@ -1,6 +1,7 @@
 .card {
   background-color: var(--color-bg);
   border-color: var(--color-main);
+  height: 100%;
 }
 
 .cardTitle {
