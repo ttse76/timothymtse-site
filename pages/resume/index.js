@@ -14,16 +14,21 @@ export default function Resume({ resume }) {
   return (
     <PageWrapper title="Resume">
       <Container>
-        <Row>
-          <Col>
-            <h1 className="page-header">Resume</h1>
+        <Row className="pt-5 justify-content-md-center">
+          <Col lg={8}>
+            <h1 className="section-header">Experience</h1>
+            <Accordion>
+              {items}
+            </Accordion>
           </Col>
         </Row>
-        <Row>
-          <Col>
-          <Accordion>
-            {items}
-          </Accordion>
+        <Row className="pt-5 justify-content-md-center">
+          <Col lg={8}>
+            <h1 className="section-header">Education</h1>
+            <div>
+              <p>Rensselaer Polytechnic Institute</p>
+              <p style={{ fontStyle: 'italic' }}>B.S. Computer Science</p>
+            </div>
           </Col>
         </Row>
       </Container>

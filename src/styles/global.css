@@ -16,6 +16,11 @@ body {
   color: var(--color-main);
 }
 
+.section-header {
+  font-family: var(--font-display);
+  color: var(--color-main);
+}
+
 .tim-link {
   text-decoration: none;
   color: var(--color-main);
