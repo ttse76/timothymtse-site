@@ -46,6 +46,11 @@ export async function getStaticProps() {
       "text": "Resume",
       "url": "/resume",
       "newTab": false
+    },
+    {
+      "text": "Email",
+      "url": "/email",
+      "newTab": false
     }
   ];
 
