@@ -12,26 +12,24 @@ export default function Resume({ resume }) {
   });
 
   return (
-    <PageWrapper title="Resume">
-      <Container>
-        <Row className="pt-5 justify-content-md-center">
-          <Col lg={8}>
-            <h1 className="section-header">Experience</h1>
-            <Accordion>
-              {items}
-            </Accordion>
-          </Col>
-        </Row>
-        <Row className="pt-5 justify-content-md-center">
-          <Col lg={8}>
-            <h1 className="section-header">Education</h1>
-            <div>
-              <p>Rensselaer Polytechnic Institute</p>
-              <p style={{ fontStyle: 'italic' }}>B.S. Computer Science</p>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+    <PageWrapper title="Resume" backButton={true}>
+      <Row className="pt-5 justify-content-md-center">
+        <Col lg={8}>
+          <h1 className="section-header">Experience</h1>
+          <Accordion>
+            {items}
+          </Accordion>
+        </Col>
+      </Row>
+      <Row className="pt-5 justify-content-md-center">
+        <Col lg={8}>
+          <h1 className="section-header">Education</h1>
+          <div>
+            <p>Rensselaer Polytechnic Institute</p>
+            <p style={{ fontStyle: 'italic' }}>B.S. Computer Science</p>
+          </div>
+        </Col>
+      </Row>
     </PageWrapper>
   )
 }

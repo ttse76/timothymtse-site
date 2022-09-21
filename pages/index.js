@@ -9,25 +9,23 @@ import PageWrapper from 'components/document/PageWrapper';
 export default function Home({ links }) {
   return (
     <PageWrapper>
-      <Container>
-        <CenterTextWrapper>
-          <Row>
-            <Col>
-              <h1 className="page-header">Timothy M. Tse</h1>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <p style={{ textAlign: 'center', fontSize: '1.5rem' }}>Software Engineer based in Northern New Jersey</p>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <LinkBox links={links} />
-            </Col>
-          </Row>
-        </CenterTextWrapper>
-      </Container>
+      <CenterTextWrapper>
+        <Row>
+          <Col>
+            <h1 className="page-header">Timothy M. Tse</h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <p style={{ textAlign: 'center', fontSize: '1.5rem' }}>Software Engineer based in Northern New Jersey</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <LinkBox links={links} />
+          </Col>
+        </Row>
+      </CenterTextWrapper>
     </PageWrapper>
   )
 };
