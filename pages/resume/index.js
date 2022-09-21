@@ -1,13 +1,12 @@
-import Accordion from 'react-bootstrap/Accordion';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import PageWrapper from "components/document/PageWrapper";
 import ResumeItem from 'components/elements/ResumeItem';
+import Accordion from 'react-bootstrap/Accordion';
 
 export default function Resume({ resume }) {
-
   const items = resume.map((resumeItem, index) => {
     return <ResumeItem {...resumeItem} eventKey={index} key={index} />
   });
@@ -22,9 +21,9 @@ export default function Resume({ resume }) {
         </Row>
         <Row>
           <Col>
-            <Accordion>
-              {items}
-            </Accordion>
+          <Accordion>
+            {items}
+          </Accordion>
           </Col>
         </Row>
       </Container>
@@ -39,6 +38,17 @@ export async function getStaticProps() {
       startMonth: 'July',
       startYear: '2022',
       role: 'Full Stack Developer',
+      highlights: [
+        'Member of the Viewpost development team'
+      ]
+    },
+    {
+      company: 'Zip Co',
+      startMonth: 'March',
+      startYear: '2021',
+      endMonth: 'April',
+      endYear: '2022',
+      role: 'Sotware Engineer II',
       highlights: [
         'Member of the Viewpost development team'
       ]

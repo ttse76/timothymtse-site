@@ -1,4 +1,8 @@
 import Accordion from 'react-bootstrap/Accordion';
+import Card from 'react-bootstrap/Card';
+import { useAccordionButton } from 'react-bootstrap/AccordionButton';
+
+import styles from 'styles/components/elements/ResumeItem.module.css';
 
 export default function ResumeItem({ 
   company,
@@ -9,18 +13,26 @@ export default function ResumeItem({
   highlights,
   role,
   eventKey}) {
-    const time = endMonth ? `${company} (${startMonth} ${startYear} - ${endMonth} ${endYear})` : `${company} (${startMonth} ${startYear} - Present)`
+    const time = endMonth ? `${role} (${startMonth} ${startYear} - ${endMonth} ${endYear})` : `${role} (${startMonth} ${startYear} - Present)`
+    const highlightsList = highlights.map(item => <li key={item}>{item}</li>);
+    const onToggle = useAccordionButton(eventKey);
+
     return (
-      <Accordion.Item eventKey={eventKey}>
-        <Accordion.Header>
-          <div style={{ display: 'block' }}>
-            <span>{time}</span><br/>
-            <span>{role}</span>
+      <Card className={styles.card}>
+        <Card.Header>
+          <div id="accordionToggle">
+            <span className="tim-link" onClick={onToggle}>{company}</span>
+            <br/>
+            <span style={{}}>{time}</span>
           </div>
-          </Accordion.Header>
-        <Accordion.Body>
-          {highlights}
-        </Accordion.Body>
-      </Accordion.Item>
+        </Card.Header>
+        <Accordion.Collapse eventKey={eventKey}>
+          <Card.Body className={styles.cardBody}>
+            <ul>
+              {highlightsList}
+            </ul>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
     );
 }

@@ -1,0 +1,8 @@
+.cardBody {
+  background-color: var(--color-bg);
+  border-color: var(--color-bg);
+}
+
+.card {
+  background-color: var(--color-bg);
+}
