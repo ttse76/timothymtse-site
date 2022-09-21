@@ -8,3 +8,8 @@
   color: var(--color-main);
   font-size: 2rem;
 }
+
+.linkList {
+  list-style-type: none;
+  padding-left: 16px
+}
