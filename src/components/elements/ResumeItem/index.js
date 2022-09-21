@@ -14,7 +14,7 @@ export default function ResumeItem({
   role,
   eventKey}) {
     const time = endMonth ? `${role} (${startMonth} ${startYear} - ${endMonth} ${endYear})` : `${role} (${startMonth} ${startYear} - Present)`
-    const highlightsList = highlights.map(item => <li key={item}>{item}</li>);
+    //const highlightsList = highlights.map(item => <li key={item}>{item}</li>);
     const onToggle = useAccordionButton(eventKey);
 
     return (
@@ -28,9 +28,7 @@ export default function ResumeItem({
         </Card.Header>
         <Accordion.Collapse eventKey={eventKey}>
           <Card.Body className={styles.cardBody}>
-            <ul>
-              {highlightsList}
-            </ul>
+            <p>{highlights}</p>
           </Card.Body>
         </Accordion.Collapse>
       </Card>
