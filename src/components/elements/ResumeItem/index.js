@@ -14,7 +14,6 @@ export default function ResumeItem({
   role,
   eventKey}) {
     const time = endMonth ? `${role} (${startMonth} ${startYear} - ${endMonth} ${endYear})` : `${role} (${startMonth} ${startYear} - Present)`
-    //const highlightsList = highlights.map(item => <li key={item}>{item}</li>);
     const onToggle = useAccordionButton(eventKey);
 
     return (
