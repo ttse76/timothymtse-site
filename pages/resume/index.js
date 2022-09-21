@@ -15,7 +15,7 @@ export default function Resume({ resume }) {
     <PageWrapper title="Resume" backButton={true}>
       <Row className="pt-5 justify-content-md-center">
         <Col lg={8}>
-          <h1 className="section-header">Experience</h1>
+          <h1 className="section-header pb-2">Experience</h1>
           <Accordion>
             {items}
           </Accordion>

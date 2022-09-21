@@ -18,7 +18,7 @@ export default function ResumeItem({
 
     return (
       <Card className={styles.card}>
-        <Card.Header>
+        <Card.Header className="p-0 pb-3">
           <div id="accordionToggle">
             <span className="tim-link" onClick={onToggle}>{company}</span>
             <br/>
@@ -26,7 +26,7 @@ export default function ResumeItem({
           </div>
         </Card.Header>
         <Accordion.Collapse eventKey={eventKey}>
-          <Card.Body className={styles.cardBody}>
+          <Card.Body className={`${styles.cardBody} p-0`}>
             <p>{highlights}</p>
           </Card.Body>
         </Accordion.Collapse>
