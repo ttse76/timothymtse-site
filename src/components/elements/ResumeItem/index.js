@@ -22,7 +22,7 @@ export default function ResumeItem({
           <div id="accordionToggle">
             <span className="tim-link" onClick={onToggle}>{company}</span>
             <br/>
-            <span style={{}}>{time}</span>
+            <span style={{ fontStyle: 'italic' }}>{time}</span>
           </div>
         </Card.Header>
         <Accordion.Collapse eventKey={eventKey}>
