@@ -71,7 +71,7 @@ export async function getStaticProps() {
       startYear: '2021',
       endMonth: 'April',
       endYear: '2022',
-      role: 'Sotware Engineer II',
+      role: 'Software Engineer II',
       highlights: `Zip is a BNPL app allowing users to split any payment into 4 installments. As a software engineer at Zip, I was
       on the decisioning team which was responsible for the fraud and risk system on the platform. Notable projects I worked on include
       reworking credit limit calulations, adding promotions and discounts, and deploying a python-fastapi microservice.`
