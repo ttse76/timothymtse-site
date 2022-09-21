@@ -29,6 +29,28 @@ export default function Resume({ resume }) {
           </div>
         </Col>
       </Row>
+      <Row className="pt-5 justify-content-md-center">
+        <Col lg={8}>
+          <h1 className="section-header">Skills</h1>
+          <p>A brief list of languages and technologies I have worked with:</p>
+          <ul style={{
+            listStyleType: 'none',
+            paddingLeft: '0'
+          }}>
+            <li>- C#/.NET</li>
+            <li>- React/Redux</li>
+            <li>- NextJS</li>
+            <li>- Node</li>
+            <li>- Express</li>
+            <li>- JavaScript</li>
+            <li>- Java</li>
+            <li>- Python</li>
+            <li>- MongoDB</li>
+            <li>- SQL</li>
+            <li>- Docker</li>
+          </ul>
+        </Col>
+      </Row>
     </PageWrapper>
   )
 }
