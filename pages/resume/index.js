@@ -14,6 +14,18 @@ export default function Resume({ resume }) {
     <PageWrapper title="Resume" backButton={true}>
       <Row className="pt-5 justify-content-md-center">
         <Col lg={8}>
+          <h1 className="section-header pb-2">Hello, World!</h1>
+          <p>
+            My name is Timothy Tse. I am a software enginneer based in northern New Jersey
+            just outside of New York City. I am a software engineer with over 5 years of experience
+            working with companies accross many differnt industries, working on teams both big
+            and small, with extensive experience and knowlege in both frontend and backend systems,
+            working with the most popular technologies on the market.
+          </p>
+        </Col>
+      </Row>
+      <Row className="pt-5 justify-content-md-center">
+        <Col lg={8}>
           <h1 className="section-header pb-2">Experience</h1>
           <Accordion>
             {items}
