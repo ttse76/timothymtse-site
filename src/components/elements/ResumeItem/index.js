@@ -20,7 +20,11 @@ export default function ResumeItem({
       <Card className={styles.card}>
         <Card.Header className="p-0 pb-3">
           <div id="accordionToggle">
-            <span className="tim-link" onClick={onToggle}>{company}</span>
+            <span>
+              <span className={`${styles.companyName}`}>{company}</span>
+              &nbsp;&nbsp;
+              <span className={`tim-link ${styles.toggle}`} onClick={onToggle}>See More</span>
+            </span>
             <br/>
             <span style={{ fontStyle: 'italic' }}>{time}</span>
           </div>
