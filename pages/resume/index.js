@@ -78,7 +78,7 @@ export async function getStaticProps() {
       helping businesses make electronic payments. As a full stack developer, I work on both the backend and frontend systems.`
     },
     {
-      company: 'Zip Co',
+      company: 'Zip',
       startMonth: 'March',
       startYear: '2021',
       endMonth: 'April',
@@ -95,7 +95,7 @@ export async function getStaticProps() {
       endMonth: 'March',
       endYear: '2021',
       role: 'Software Engineer',
-      highlights: `Datacor is a vertal SaSS company, specializing in logisics and sales software for chemical companies. As a software
+      highlights: `Datacor is a vertal SaaS company, specializing in logisics and sales software for chemical companies. As a software
       engineer at Datacor, I was a member of the team developing and maintaining Datacor CRM, a CRM designed for chemcial companies. 
       Notable projects I worked on included building a sales view module using React, reworking price calculations, as well as 
       preparing and presenting seminars and workshops at Datacor's annual user conference`
