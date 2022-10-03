@@ -20,9 +20,9 @@ export default function ResumeItem({
 
     const onToggle = useAccordionButton(eventKey);
 
-    useEffect(() => {
+    /*useEffect(() => {
       setToggleText(collapsed ? 'See More' : 'See Less');
-    }, [collapsed]);
+    }, [collapsed]);*/
 
     return (
       <Card className={styles.card}>
