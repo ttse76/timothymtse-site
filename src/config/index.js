@@ -1,3 +1,3 @@
 export const config = {
-  palette: 1
+  palette: 2
 }
