@@ -1,10 +1,17 @@
 .cardBody {
   background-color: var(--color-bg);
   border-color: var(--color-bg);
+  border: none;
 }
 
 .card {
   background-color: var(--color-bg);
+  border: none;
+}
+
+.cardHeader {
+  background-color: var(--color-bg);
+  border: none;
 }
 
 .companyName {

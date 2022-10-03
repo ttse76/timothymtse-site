@@ -26,7 +26,7 @@ export default function ResumeItem({
 
     return (
       <Card className={styles.card}>
-        <Card.Header className="p-0 pb-3">
+        <Card.Header className={`${styles.cardHeader} p-0 pb-3`}>
           <div id="accordionToggle">
             <span>
               <span className={`${styles.companyName}`}>{company}</span>
