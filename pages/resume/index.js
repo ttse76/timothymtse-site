@@ -15,7 +15,7 @@ export default function Resume({ resume }) {
       <Row className="pt-5 justify-content-md-center">
         <Col lg={8}>
           <h1 className="section-header pb-2">Hello, World!</h1>
-          <p>
+          <p style={{textAlign: 'justify'}}>
             My name is Timothy Tse. I am a software enginneer based in northern New Jersey
             just outside of New York City. I am a software engineer with over 5 years of experience
             working with companies accross many differnt industries, working on teams both big
