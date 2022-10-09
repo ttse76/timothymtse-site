@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
@@ -19,10 +19,6 @@ export default function ResumeItem({
     const [toggleText, setToggleText] = useState('See More');
 
     const onToggle = useAccordionButton(eventKey);
-
-    /*useEffect(() => {
-      setToggleText(collapsed ? 'See More' : 'See Less');
-    }, [collapsed]);*/
 
     return (
       <Card className={styles.card}>
