@@ -5,7 +5,7 @@ import PageWrapper from "components/document/PageWrapper";
 import ResumeItem from 'components/elements/ResumeItem';
 import Accordion from 'react-bootstrap/Accordion';
 
-export default function Resume({ resume }) {
+export default function Resume({ resume, skills }) {
   const items = resume.map((resumeItem, index) => {
     return <ResumeItem {...resumeItem} eventKey={index} key={index} />
   });
@@ -49,17 +49,7 @@ export default function Resume({ resume }) {
             listStyleType: 'none',
             paddingLeft: '0'
           }}>
-            <li>- C#/.NET</li>
-            <li>- React/Redux</li>
-            <li>- NextJS</li>
-            <li>- Node</li>
-            <li>- Express</li>
-            <li>- JavaScript</li>
-            <li>- Java</li>
-            <li>- Python</li>
-            <li>- MongoDB</li>
-            <li>- SQL</li>
-            <li>- Docker</li>
+            {skills.map(skill => <li key={skill}>- {skill}</li>)}
           </ul>
         </Col>
       </Row>
@@ -102,9 +92,24 @@ export async function getStaticProps() {
     }
   ];
 
+  const skills = [
+    'C#/.NET',
+    'React/Redux',
+    'NextJS',
+    'NodeJS',
+    'Express',
+    'JavaScript',
+    'Java',
+    'Python',
+    'MongoDB',
+    'SQL',
+    'Docker'
+  ];
+
   return {
     props: {
-      resume
+      resume,
+      skills
     }
   }
 }
