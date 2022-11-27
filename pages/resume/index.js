@@ -16,9 +16,9 @@ export default function Resume({ resume, skills }) {
         <Col lg={8}>
           <h1 className="section-header pb-2">Hello, World!</h1>
           <p style={{textAlign: 'justify'}}>
-            My name is Timothy Tse. I am a software enginneer based in northern New Jersey
-            just outside of New York City. I am a software engineer with over 5 years of experience
-            working with companies accross many differnt industries, working on teams both big
+            My name is Timothy Tse. I am a software engineer based in northern New Jersey,
+            just outside of New York City. I have over 5 years of experience
+            working with companies accross many different industries, working on teams both big
             and small, with extensive experience and knowlege in both frontend and backend systems,
             working with the most popular technologies on the market.
           </p>
@@ -65,7 +65,8 @@ export async function getStaticProps() {
       startYear: '2022',
       role: 'Full Stack Developer',
       highlights: `I am currently a member of the Viewpost development team. Viewpost is b2b payment network
-      helping businesses make electronic payments. As a full stack developer, I work on both the backend and frontend systems.`
+      helping businesses make electronic payments. As a full stack developer, I work on both the backend and frontend systems,
+      primarily focusing on internal customer service tools.`
     },
     {
       company: 'Zip',
@@ -85,7 +86,7 @@ export async function getStaticProps() {
       endMonth: 'March',
       endYear: '2021',
       role: 'Software Engineer',
-      highlights: `Datacor is a vertal SaaS company, specializing in logisics and sales software for chemical companies. As a software
+      highlights: `Datacor is a vertical SaaS company, specializing in logisics and sales software for chemical companies. As a software
       engineer at Datacor, I was a member of the team developing and maintaining Datacor CRM, a CRM designed for chemcial companies. 
       Notable projects I worked on included building a sales view module using React, reworking price calculations, as well as 
       preparing and presenting seminars and workshops at Datacor's annual user conference`
