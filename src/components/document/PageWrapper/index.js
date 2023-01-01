@@ -5,11 +5,12 @@ import Container from 'react-bootstrap/Container';
 import styles from 'styles/components/document/PageWrapper.module.css';
 
 export default function PageWrapper({ children, title = "Timothy Tse", backButton = false }) {
-  
   const back = backButton ? <Nav>
     <Nav.Link href="/"><span style={{fontSize: '2rem'}} className="tim-link">&larr; back</span></Nav.Link>
   </Nav>: <></>;
-  
+
+  const currentYear = new Date().getFullYear();
+
   return (
     <div>
       <Head>
@@ -21,7 +22,7 @@ export default function PageWrapper({ children, title = "Timothy Tse", backButto
           {children}
         </div>
         <footer className={styles.footer}>
-          <p className={styles.copyright}>&copy; 2022 Timothy Tse</p>
+          <p className={styles.copyright}>&copy; {currentYear} Timothy Tse</p>
         </footer>
       </Container>
     </div>
