@@ -2,7 +2,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import CenterTextWrapper from 'components/style/CenterTextWrapper';
-import LinkBox from 'components/elements/LinkBox';
+import Navigation from 'components/elements/Navigation';
 import PageWrapper from 'components/document/PageWrapper';
 
 export default function Home({ links }) {
@@ -21,7 +21,7 @@ export default function Home({ links }) {
         </Row>
         <Row>
           <Col>
-            <LinkBox links={links} />
+            <Navigation links={links} />
           </Col>
         </Row>
       </CenterTextWrapper>
