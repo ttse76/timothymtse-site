@@ -115,6 +115,7 @@ export async function getStaticProps() {
     'React/Redux',
     'NextJS',
     'NodeJS',
+    'Go/Golang',
     'Express',
     'JavaScript',
     'Java',
