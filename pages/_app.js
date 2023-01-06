@@ -10,6 +10,8 @@ function MyApp({ Component, pageProps }) {
       break;
     case 2:
       import('styles/palette_2.css');
+    case 3:
+      import('styles/palette_3.css');
   }
   return <Component {...pageProps} />
 }

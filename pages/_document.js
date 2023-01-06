@@ -5,7 +5,8 @@ import { Html, Head, Main, NextScript } from 'next/document';
 export default function Document() {
   const palettes = {
     1: 'https://fonts.googleapis.com/css2?family=Play&family=Share+Tech+Mono&display=swap',
-    2: 'https://fonts.googleapis.com/css2?family=Goldman&family=Ubuntu&display=swap'
+    2: 'https://fonts.googleapis.com/css2?family=Goldman&family=Ubuntu&display=swap',
+    3: 'https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap'
   }
   return (
     <Html>
