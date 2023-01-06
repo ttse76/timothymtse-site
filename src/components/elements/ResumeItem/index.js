@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 
 import styles from 'styles/components/elements/ResumeItem.module.css';
+import { AccordionContext } from 'react-bootstrap';
 
 export default function ResumeItem({ 
   company,
@@ -14,9 +15,8 @@ export default function ResumeItem({
   highlights,
   role,
   eventKey}) {
+    const { activeEventKey } = useContext(AccordionContext);
     const time = endMonth ? `${role} (${startMonth} ${startYear} - ${endMonth} ${endYear})` : `${role} (${startMonth} ${startYear} - Present)`
-    const [collapsed, setCollapsed] = useState(true);
-    const [toggleText, setToggleText] = useState('See More');
 
     const onToggle = useAccordionButton(eventKey);
 
@@ -27,7 +27,7 @@ export default function ResumeItem({
             <span>
               <span className={`${styles.companyName}`}>{company}</span>
               &nbsp;&nbsp;
-              <span className={`tim-link ${styles.toggle}`} onClick={() => { onToggle(); setCollapsed(!collapsed)}}>{toggleText}</span>
+              <span className={`tim-link ${styles.toggle}`} onClick={() => onToggle()}>{activeEventKey === eventKey ? 'See Less' : 'See More'}</span>
             </span>
             <br/>
             <span style={{ fontStyle: 'italic' }}>{time}</span>
