@@ -81,9 +81,11 @@ export async function getStaticProps() {
       startMonth: 'July',
       startYear: '2022',
       role: 'Full Stack Developer',
-      highlights: `I am currently a member of the Viewpost development team. Viewpost is b2b payment network
-      helping businesses make electronic payments. As a full stack developer, I work on both the backend and frontend systems,
-      primarily focusing on internal customer service tools.`
+      highlights: [
+        'Full stack role working on both the main application and the internal administration application',
+        'Developed and deployed procedures for Microsoft SQL database',
+        'Developed enchancements to internal application to assist customer service in tracking and monitoring high risk accounts'
+      ]
     },
     {
       company: 'Zip',
@@ -92,9 +94,14 @@ export async function getStaticProps() {
       endMonth: 'April',
       endYear: '2022',
       role: 'Software Engineer II',
-      highlights: `Zip is a BNPL app allowing users to split any payment into 4 installments. As a software engineer at Zip, I was
-      on the decisioning team which was responsible for the fraud and risk system on the platform. Notable projects I worked on include
-      reworking credit limit calulations, adding promotions and discounts, and deploying a python-fastapi microservice.`
+      highlights: [
+        'Member of the credit risk team',
+        'Worked on a agile team utilizing test driven development',
+        'Reworked new user approval by implementing a machine learning based model',
+        'Built and deployed Python based api using the FastAPI framework',
+        'Served in the on call rotation responding and troubleshooting alerts',
+        'Prevented outage due to defensive coding in module I developed'
+      ]
     },
     {
       company: 'Datacor',
@@ -103,10 +110,13 @@ export async function getStaticProps() {
       endMonth: 'March',
       endYear: '2021',
       role: 'Software Engineer',
-      highlights: `Datacor is a vertical SaaS company, specializing in logisics and sales software for chemical companies. As a software
-      engineer at Datacor, I was a member of the team developing and maintaining Datacor CRM, a CRM designed for chemcial companies. 
-      Notable projects I worked on included building a sales view module using React, reworking price calculations, as well as 
-      preparing and presenting seminars and workshops at Datacor's annual user conference`
+      highlights: [
+        'Member of the Datacor CRM team, a vertical SaaS application managing sales and logistics for chemical companies',
+        'Full stack role working with a Java backend and a front end with JavaScript and an in house framwork',
+        'Built out sales analysis module in React calculating sales trends based on placed orders',
+        'Assisted customers with technical support issues',
+        'Prepared and presented edcuational seminars about Datacor CRM'
+      ]
     }
   ];
 

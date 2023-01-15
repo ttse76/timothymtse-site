@@ -20,6 +20,8 @@ export default function ResumeItem({
 
     const onToggle = useAccordionButton(eventKey);
 
+    const listHighlights = highlights.map((highlight, i) => <li key={i}>{highlight}</li>)
+
     return (
       <Card className={styles.card}>
         <Card.Header className={`${styles.cardHeader} p-0 pb-3`}>
@@ -35,7 +37,7 @@ export default function ResumeItem({
         </Card.Header>
         <Accordion.Collapse eventKey={eventKey}>
           <Card.Body className={`${styles.cardBody} p-0`}>
-            <p>{highlights}</p>
+            <ul>{listHighlights}</ul>
           </Card.Body>
         </Accordion.Collapse>
       </Card>
