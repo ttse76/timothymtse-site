@@ -1,1 +1,1 @@
-Sitemap: https://timothymtse.com/sitemap.txt
+Sitemap: https://timothymtse.com/sitemap.xml
