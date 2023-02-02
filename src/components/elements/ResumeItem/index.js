@@ -1,7 +1,9 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
+
+import Link from 'next/link';
 
 import styles from 'styles/components/elements/ResumeItem.module.css';
 import { AccordionContext } from 'react-bootstrap';
@@ -14,6 +16,7 @@ export default function ResumeItem({
   endYear,
   highlights,
   role,
+  companyLink,
   eventKey}) {
     const { activeEventKey } = useContext(AccordionContext);
     const time = endMonth ? `${role} (${startMonth} ${startYear} - ${endMonth} ${endYear})` : `${role} (${startMonth} ${startYear} - Present)`
@@ -27,7 +30,7 @@ export default function ResumeItem({
         <Card.Header className={`${styles.cardHeader} p-0 pb-3`}>
           <div id="accordionToggle">
             <span>
-              <span className={`${styles.companyName}`}>{company}</span>
+              <Link href={companyLink}><a className={styles.companyName} target={'_blank'}>{company}</a></Link>
               &nbsp;&nbsp;
               <span className={`tim-link ${styles.toggle}`} onClick={() => onToggle()}>{activeEventKey === eventKey ? 'See Less' : 'See More'}</span>
             </span>

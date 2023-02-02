@@ -85,7 +85,8 @@ export async function getStaticProps() {
         'Full stack role working on both the main application and the internal administration application',
         'Developed and deployed procedures for Microsoft SQL database',
         'Developed enchancements to internal application to assist customer service in tracking and monitoring high risk accounts'
-      ]
+      ],
+      companyLink: 'https://www.viewpost.com/'
     },
     {
       company: 'Zip',
@@ -101,7 +102,8 @@ export async function getStaticProps() {
         'Built and deployed Python based api using the FastAPI framework',
         'Served in the on call rotation responding and troubleshooting alerts',
         'Prevented outage due to defensive coding in module I developed'
-      ]
+      ],
+      companyLink: 'https://zip.co/us'
     },
     {
       company: 'Datacor',
@@ -116,7 +118,8 @@ export async function getStaticProps() {
         'Built out sales analysis module in React calculating sales trends based on placed orders',
         'Assisted customers with technical support issues',
         'Prepared and presented edcuational seminars about Datacor CRM'
-      ]
+      ],
+      companyLink: 'https://www.datacor.com/'
     }
   ];
 
