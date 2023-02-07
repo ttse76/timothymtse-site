@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const currentPalette = 1;
 
 const getCurrentPalette = () => {
@@ -10,12 +12,22 @@ const getCurrentPalette = () => {
 
 export function useTheme() {
   const selectedPalette = getCurrentPalette();
+  
+  const [useDarkMode, setUseDarkMode] = useState(typeof window !== 'undefined'
+    ? window.matchMedia('(prefers-color-scheme: dark)').matches
+    : true);
+
+    const getColorType = (colorName) => {
+      const name = `${colorName}${useDarkMode ? 'Dark' : 'Light'}`;
+      console.log(selectedPalette[name]);
+      return selectedPalette[name];
+    };
 
   const palette = <style jsx global>{`:root {
-    --color-main: ${selectedPalette.colorMain};
-    --color-main-hover: ${selectedPalette.colorMainHover};
-    --color-bg: ${selectedPalette.colorBg};
-    --color-text: ${selectedPalette.colorText};
+    --color-main: ${getColorType('colorMain')};
+    --color-main-hover: ${getColorType('colorMainHover')};
+    --color-bg: ${getColorType('colorBg')};
+    --color-text: ${getColorType('colorText')};
     --font-display: ${selectedPalette.fontDisplay};
     --font-text: ${selectedPalette.fontText};
   }`}</style>;
@@ -27,10 +39,14 @@ export function useTheme() {
 }
 
 const palette1 = {
-  colorMain: '#41ebf9',
-  colorMainHover: '#ddfcff',
-  colorText: 'white',
-  colorBg: '#010031',
+  colorMainDark: '#41ebf9',
+  colorMainLight: '#010031',
+  colorMainHoverDark: '#ddfcff',
+  colorMainHoverLight: '#009088',
+  colorTextDark: '#FFF5E5',
+  colorTextLight: 'black',
+  colorBgDark: '#010031',
+  colorBgLight: '#FFF5E5',
   fontDisplay: "'Poppins', sans-serif",
   fontText: "'Roboto', sans-serif",
   fontUrl: "https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"

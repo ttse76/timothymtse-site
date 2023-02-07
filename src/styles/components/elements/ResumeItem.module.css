@@ -15,7 +15,7 @@
 }
 
 .companyName {
-  color: white;
+  color: var(--color-main);
   font-size: 1.6rem;
   font-weight: 700;
   text-decoration: none;
@@ -23,7 +23,7 @@
 }
 
 .companyName:hover {
-  color: var(--color-main);
+  color: var(--color-main-hover);
 }
 
 .toggle {
