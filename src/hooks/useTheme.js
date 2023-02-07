@@ -19,7 +19,6 @@ export function useTheme() {
 
     const getColorType = (colorName) => {
       const name = `${colorName}${useDarkMode ? 'Dark' : 'Light'}`;
-      console.log(selectedPalette[name]);
       return selectedPalette[name];
     };
 
