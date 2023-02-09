@@ -11,17 +11,19 @@ export default function Home({ links }) {
       <CenterTextWrapper>
         <Row>
           <Col>
-            <h1 className="page-header">Timothy Tse</h1>
+            <h1 className="page-header fade-in">Timothy Tse</h1>
           </Col>
         </Row>
         <Row>
           <Col>
-            <p style={{ textAlign: 'center', fontSize: '1.5rem' }}>Software Engineer based in Northern New Jersey</p>
+            <p className="sub-header">Software Engineer based in Northern New Jersey</p>
           </Col>
         </Row>
         <Row>
           <Col>
-            <Navigation links={links} />
+            <div className="nav-header">
+              <Navigation links={links} />
+            </div>
           </Col>
         </Row>
       </CenterTextWrapper>
