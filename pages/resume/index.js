@@ -81,10 +81,15 @@ export async function getStaticProps() {
       startMonth: 'July',
       startYear: '2022',
       role: 'Full Stack Developer',
+      description: `Viewpost is a B2B payments network working to simplify, streamline, and secure the way some of
+      the largest companies in the world pay and get paid.
+      Customers are able to pay their vendors through the Viewpost system and Viewpost handles getting
+      the payment to the vendors via ACH, virtual credit card, or paper check.`,
       highlights: [
-        'Full stack role working on both the main application and the internal administration application',
+        'Full stack role working on both the main application and the internal administration tools',
         'Developed and deployed procedures for Microsoft SQL database',
-        'Developed enchancements to internal application to assist customer service in tracking and monitoring high risk accounts'
+        'Developed enchancements to internal application to assist customer service in tracking and monitoring high risk accounts',
+        'Enchanced system to audit companies on the network with additional reporting tools'
       ],
       companyLink: 'https://www.viewpost.com/'
     },
@@ -95,6 +100,8 @@ export async function getStaticProps() {
       endMonth: 'April',
       endYear: '2022',
       role: 'Software Engineer II',
+      description: `Zip is a BNPL system allowing customers to split their purchases into 4 interest free installments.
+      Users can pay with Zip either through the integrated checkout, or pay anywhere with the Zip app.`,
       highlights: [
         'Member of the credit risk team',
         'Worked on a agile team utilizing test driven development',
@@ -112,8 +119,11 @@ export async function getStaticProps() {
       endMonth: 'March',
       endYear: '2021',
       role: 'Software Engineer',
+      description: `Datacor is a vertical SaaS company specializing in sales and logistics software for
+      chemical companies, with two products that are integreated with each other to have a complete
+      system to manage sales and inventory.`,
       highlights: [
-        'Member of the Datacor CRM team, a vertical SaaS application managing sales and logistics for chemical companies',
+        'Member of the team working on Datacor CRM',
         'Full stack role working with a Java backend and a front end with JavaScript and an in house framwork',
         'Built out sales analysis module in React calculating sales trends based on placed orders',
         'Assisted customers with technical support issues',

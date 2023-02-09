@@ -14,6 +14,7 @@ export default function ResumeItem({
   startYear,
   endMonth,
   endYear,
+  description,
   highlights,
   role,
   companyLink,
@@ -40,6 +41,7 @@ export default function ResumeItem({
         </Card.Header>
         <Accordion.Collapse eventKey={eventKey}>
           <Card.Body className={`${styles.cardBody} p-0`}>
+            <p style={{ textAlign: 'justify' }}>{description}</p>
             <ul>{listHighlights}</ul>
           </Card.Body>
         </Accordion.Collapse>
