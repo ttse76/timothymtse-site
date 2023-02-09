@@ -13,14 +13,16 @@ const getCurrentPalette = () => {
 export function useTheme() {
   const selectedPalette = getCurrentPalette();
   
-  const [useDarkMode, setUseDarkMode] = useState(typeof window !== 'undefined'
+  /*const [useDarkMode, setUseDarkMode] = useState(typeof window !== 'undefined'
     ? window.matchMedia('(prefers-color-scheme: dark)').matches
-    : true);
+    : true);*/
 
-    const getColorType = (colorName) => {
-      const name = `${colorName}${useDarkMode ? 'Dark' : 'Light'}`;
-      return selectedPalette[name];
-    };
+  const useDarkMode = true;
+
+  const getColorType = (colorName) => {
+    const name = `${colorName}${useDarkMode ? 'Dark' : 'Light'}`;
+    return selectedPalette[name];
+  };
 
   const palette = <style jsx global>{`:root {
     --color-main: ${getColorType('colorMain')};
@@ -39,7 +41,7 @@ export function useTheme() {
 
 const palette1 = {
   colorMainDark: '#0BD3E5',
-  colorMainLight: '#010031',
+  colorMainLight: '#0BD3E5',
   colorMainHoverDark: '#ddfcff',
   colorMainHoverLight: '#009088',
   colorTextDark: '#bababa',
