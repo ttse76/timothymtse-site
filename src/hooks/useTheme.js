@@ -38,13 +38,13 @@ export function useTheme() {
 }
 
 const palette1 = {
-  colorMainDark: '#41ebf9',
+  colorMainDark: '#0BD3E5',
   colorMainLight: '#010031',
   colorMainHoverDark: '#ddfcff',
   colorMainHoverLight: '#009088',
-  colorTextDark: '#FFF5E5',
+  colorTextDark: '#bababa',
   colorTextLight: 'black',
-  colorBgDark: '#010031',
+  colorBgDark: '#292929',
   colorBgLight: '#FFF5E5',
   fontDisplay: "'Poppins', sans-serif",
   fontText: "'Roboto', sans-serif",
