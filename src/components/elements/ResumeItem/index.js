@@ -18,13 +18,16 @@ export default function ResumeItem({
   highlights,
   role,
   companyLink,
+  techStack,
   eventKey}) {
     const { activeEventKey } = useContext(AccordionContext);
     const time = endMonth ? `${role} (${startMonth} ${startYear} - ${endMonth} ${endYear})` : `${role} (${startMonth} ${startYear} - Present)`
 
     const onToggle = useAccordionButton(eventKey);
 
-    const listHighlights = highlights.map((highlight, i) => <li key={i}>{highlight}</li>)
+    const listHighlights = highlights.map((highlight, i) => <li class={styles.lineItem} key={i}>{highlight}</li>);
+
+    const tech = `Tech Stack: ${techStack.join(', ')}`;
 
     return (
       <Card className={styles.card}>
@@ -43,6 +46,7 @@ export default function ResumeItem({
           <Card.Body className={`${styles.cardBody} p-0`}>
             <p style={{ textAlign: 'justify' }}>{description}</p>
             <ul>{listHighlights}</ul>
+            <p style={{ fontWeight: 'bold' }}>{tech}</p>
           </Card.Body>
         </Accordion.Collapse>
       </Card>

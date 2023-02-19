@@ -92,7 +92,15 @@ export async function getStaticProps() {
         'Enchanced system to audit companies on the network with additional reporting tools',
         'Developed custom SQL procedures for data aggregation and processing'
       ],
-      companyLink: 'https://www.viewpost.com/'
+      companyLink: 'https://www.viewpost.com/',
+      techStack: [
+        'C#',
+        'React',
+        'JavaScript',
+        'SQL',
+        'Splunk',
+        'TeamCity'
+      ]
     },
     {
       company: 'Zip',
@@ -112,7 +120,16 @@ export async function getStaticProps() {
         'Worked cross team alongside product managers, engineering managers, and data engineers',
         'Served in an on call rotation to maintain maximum uptime'
       ],
-      companyLink: 'https://zip.co/us'
+      companyLink: 'https://zip.co/us',
+      techStack: [
+        'C#',
+        'Azure',
+        'CosmosDB',
+        'Datadog',
+        'Opsgenie',
+        'Python',
+        'FastAPI'
+      ]
     },
     {
       company: 'Datacor',
@@ -130,7 +147,16 @@ export async function getStaticProps() {
         'Reworked and tested backend sales aggregation systems',
         "Prepared and presented training seminars for Datacor's annual users conference"
       ],
-      companyLink: 'https://www.datacor.com/'
+      companyLink: 'https://www.datacor.com/',
+      techStack: [
+        'Java',
+        'JavaScript',
+        'React',
+        'SQL',
+        'Microsoft Access',
+        'Apache',
+        'Ant'
+      ]
     }
   ];
 
@@ -138,7 +164,7 @@ export async function getStaticProps() {
     'C#/.NET',
     'React/Redux',
     'NextJS',
-    'NodeJS',
+    'Node.js',
     'Go/Golang',
     'Express',
     'JavaScript',
