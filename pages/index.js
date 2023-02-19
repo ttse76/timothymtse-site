@@ -21,7 +21,7 @@ export default function Home({ links }) {
         </Row>
         <Row>
           <Col>
-            <div className="nav-header">
+            <div className="sub-header">
               <Navigation links={links} />
             </div>
           </Col>

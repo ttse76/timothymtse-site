@@ -27,14 +27,7 @@ body {
   animation-fill-mode: forwards;
 }
 
-.nav-header {
-  opacity: 0;
-  animation: fadeInAnimation 1s ease-in;
-  animation-delay: 1.9s;
-  animation-fill-mode: forwards;
-}
-
-.sub-header::after, .nav-header::after{
+.sub-header::after {
   opacity: 1;
 }
 
