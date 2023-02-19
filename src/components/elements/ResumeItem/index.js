@@ -25,7 +25,7 @@ export default function ResumeItem({
 
     const onToggle = useAccordionButton(eventKey);
 
-    const listHighlights = highlights.map((highlight, i) => <li class={styles.lineItem} key={i}>{highlight}</li>);
+    const listHighlights = highlights.map((highlight, i) => <li className={styles.lineItem} key={i}>{highlight}</li>);
 
     const tech = `Tech Stack: ${techStack.join(', ')}`;
 
