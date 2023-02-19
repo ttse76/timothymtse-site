@@ -86,10 +86,11 @@ export async function getStaticProps() {
       Customers are able to pay their vendors through the Viewpost system and Viewpost handles getting
       the payment to the vendors via ACH, virtual credit card, or paper check.`,
       highlights: [
-        'Full stack role working on both the main application and the internal administration tools',
-        'Developed and deployed procedures for Microsoft SQL database',
+        'Full stack developer working on both front end and back end systems',
+        'Designed and implemented new features to our internal customer service system which helped customer service agents more efficiently help customers',
         'Developed enchancements to internal application to assist customer service in tracking and monitoring high risk accounts',
-        'Enchanced system to audit companies on the network with additional reporting tools'
+        'Enchanced system to audit companies on the network with additional reporting tools',
+        'Developed custom SQL procedures for data aggregation and processing'
       ],
       companyLink: 'https://www.viewpost.com/'
     },
@@ -103,12 +104,13 @@ export async function getStaticProps() {
       description: `Zip is a BNPL system allowing customers to split their purchases into 4 interest free installments.
       Users can pay with Zip either through the integrated checkout, or pay anywhere with the Zip app.`,
       highlights: [
-        'Member of the credit risk team',
-        'Worked on a agile team utilizing test driven development',
-        'Reworked new user approval by implementing a machine learning based model',
-        'Built and deployed Python based api using the FastAPI framework',
-        'Served in the on call rotation responding and troubleshooting alerts',
-        'Prevented outage due to defensive coding in module I developed'
+        'Designed, engineered, and deployed FastAPI based API onto a Microsoft Azure based cloud system',
+        'Designed, engineered, and deployed new risk assessment pipeline alongside an in house data team which saw a significate reduced risk exposure',
+        'Designed, enginnered, and deployed a major part of a rewards pipeline assessing rewards eligibility for purchases',
+        'Spearheaded a documentation initiative to define more clearly the input and output of each API endpoint and microservice',
+        'Prevented major outage casued by a third party vendor with defensive coding',
+        'Worked cross team alongside product managers, engineering managers, and data engineers',
+        'Served in an on call rotation to maintain maximum uptime'
       ],
       companyLink: 'https://zip.co/us'
     },
@@ -123,11 +125,10 @@ export async function getStaticProps() {
       chemical companies, with two products that are integreated with each other to have a complete
       system to manage sales and inventory.`,
       highlights: [
-        'Member of the team working on Datacor CRM',
-        'Full stack role working with a Java backend and a front end with JavaScript and an in house framwork',
-        'Built out sales analysis module in React calculating sales trends based on placed orders',
-        'Assisted customers with technical support issues',
-        'Prepared and presented edcuational seminars about Datacor CRM'
+        'Designed and contributed full stack projects for a web based CRM',
+        'Designed and implemented a React based sales analysis module designing the modal and backend analysis calculations based on the Rates-of-Change model from ITR Economics',
+        'Reworked and tested backend sales aggregation systems',
+        "Prepared and presented training seminars for Datacor's annual users conference"
       ],
       companyLink: 'https://www.datacor.com/'
     }
