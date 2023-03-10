@@ -11,7 +11,7 @@ export default function Home({ links }) {
       <CenterTextWrapper>
         <Row>
           <Col>
-            <h1 className="page-header fade-in">Timothy Tse</h1>
+            <h1 className="page-header">Timothy Tse</h1>
           </Col>
         </Row>
         <Row>
