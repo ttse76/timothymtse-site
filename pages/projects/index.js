@@ -32,14 +32,6 @@ export async function getStaticProps() {
       ]
     },
     {
-      title: 'Rolodex',
-      description: `A simple app I am building as a credit card points enthusiast 
-      to keep track of credit cards and loyalty programs`,
-      links: [
-        ['View on Github', 'https://github.com/ttse76/rolodex']
-      ]
-    },
-    {
       title: 'Discord Tunes',
       description: `A framework to create your own music playing bot for discord. Currently only supports YouTube.`,
       links: [
