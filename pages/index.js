@@ -48,11 +48,11 @@ export async function getStaticProps() {
       "url": "/resume",
       "newTab": false
     },
-    {
+    /*{
       "text": "Projects",
       "url": "/projects",
       "newTab": false
-    },
+    },*/
     {
       "text": "Email",
       "url": "/email",

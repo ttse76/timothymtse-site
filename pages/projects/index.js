@@ -22,7 +22,11 @@ export default function Projects({ projects }) {
   );
 }
 
-export async function getStaticProps() {
+export function getServerSideProps() {
+  return { notFound: true };
+}
+
+/*export async function getStaticProps() {
   const projects = [
     {
       title: 'This Site',
@@ -45,4 +49,4 @@ export async function getStaticProps() {
       projects
     }
   }
-}
+}*/
