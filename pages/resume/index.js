@@ -9,14 +9,17 @@ import Accordion from 'react-bootstrap/Accordion';
 
 import styles from 'styles/pages/Resume.module.css';
 
-export default function Resume({ resume, skills }) {
+export default function Resume({
+  resume,
+  skills,
+  theatre
+}) {
   const items = resume.map((resumeItem, index) => {
     return <ResumeItem {...resumeItem} eventKey={index} key={index} />
   });
 
-  const paragraphStyle = {
-    textAlign: 'justify'
-  }
+  const m0 = { marginBottom: '0px' };
+  const showTitle = { fontStyle: 'italic', fontWeight: 'bold' };
 
   return (
     <PageWrapper title="Resume" backButton={true}>
@@ -35,10 +38,6 @@ export default function Resume({ resume, skills }) {
             In addition to programming, I have been heavily involved in software design and architecture,
             working with both engineers and managers to design and develop major features for enterprise applications.
           </p>
-          <br />
-          <p style={paragraphStyle}>
-            I am also open to select freelance web development projects as well. For inquries, feel free to email me <Link href="/email"><a className={styles.paragraphLink}>here!</a></Link>
-          </p>
         </Col>
       </Row>
       <Row className="pt-5 justify-content-md-center">
@@ -53,8 +52,23 @@ export default function Resume({ resume, skills }) {
         <Col lg={8}>
           <h1 className="section-header">Education</h1>
           <div>
-            <p>Rensselaer Polytechnic Institute</p>
-            <p style={{ fontStyle: 'italic' }}>B.S. Computer Science</p>
+            <p style={{ ...m0, fontWeight: 'bold', fontSize: '1.5rem' }}>{"Rensselaer Polytechnic Institute '17"}</p>
+            <ul style={{listStyle: 'none', paddingLeft: '0px'}}>
+              <li>Degree: B.S. Computer Science</li>
+              <li>Member of the Tau Nu chapter of Phi Gamma Delta</li>
+              <ul>
+                <li>Director, House Corporation of Phi Gamma Delta @ RPI (2023 - Present)</li>
+                <li>Secretary, Board of Chapter Advisors (2018-2019)</li>
+              </ul>
+            </ul>
+          </div>
+          <div>
+            <p style={{ ...m0, fontWeight: 'bold', fontSize: '1.5rem' }}>{"Montclair Kimberley Academy '13"}</p>  
+            <ul style={{listStyle: 'none', paddingLeft: '0px'}}>
+              <li>High School Diploma</li>
+              <li>Theatre</li>
+              <TheatreCredits credits={theatre} />
+            </ul>
           </div>
         </Col>
       </Row>
@@ -74,6 +88,21 @@ export default function Resume({ resume, skills }) {
   )
 }
 
+const TheatreCredits = ({ credits }) => {
+  const showTitle = { fontStyle: 'italic', fontWeight: 'bold' };
+  const comps = credits.map((credit, i) => {
+    return (<ul style={{ listStyle: 'none', paddingBottom: '15px' }} key={`show${i}`}>
+      <li style={showTitle}>{credit.showTitle}</li>
+      <li>{credit.theatreName}, {credit.location}</li>
+      <li>Role: {credit.role}</li>
+      <li>{credit.description}</li>
+      <ul></ul>
+    </ul>);
+  });
+
+  return <div>{comps}</div>
+};
+
 export async function getStaticProps() {
   const resume = [
     {
@@ -86,12 +115,13 @@ export async function getStaticProps() {
       Customers are able to pay their vendors through the Viewpost system and Viewpost handles getting
       the payment to the vendors via ACH, virtual credit card, or paper check.`,
       highlights: [
-        'Full stack developer working on both front end and back end systems',
-        'Designed and implemented new features to our internal customer service system which helped customer service agents more efficiently help customers',
-        'Developed enchancements to internal application to assist customer service in tracking and monitoring high risk accounts',
-        'Enchanced system to audit companies on the network with additional reporting tools',
-        'Developed custom SQL procedures for data aggregation and processing'
-      ],
+        "Designed and engineered projects to enhance the efficiency and precision of our risk assessment and risk management systems, enabling customer service teams to swiftly and accurately identify potential fraudulent activities within the system, bolstering our ability to safeguard customers and protect against fraudulent transactions, fostering a secure and trustworthy electronic payment environment.",
+        "Strategically developed and rigorously tested SQL procedures, optimizing data aggregation processes for improved efficiency, thereby streamlining the overall system performance.",
+        "Genericized React components, fostering code reusability and promoting a more efficient development workflow, contributing significantly to maintainable and scalable codebase.",
+        "Introduced valuable enhancements to an internal application, enabling customer service teams to effectively track and monitor high-risk accounts, leading to enhanced risk management and improved customer satisfaction.",
+        "Bolstered the system's capabilities by implementing additional reporting tools, allowing for comprehensive auditing of companies within the network, fostering a higher level of data-driven decision-making and compliance.",
+        "Implemented a cutting-edge tool to bolster customer support operations by enabling the swift identification and flagging of suspicious merchants from financial transactions. This initiative significantly improved fraud detection and prevention, ensuring a more secure and seamless experience for our valued customers, while also streamlining the workflow for support teams."
+    ],
       companyLink: 'https://www.viewpost.com/',
       techStack: [
         'C#',
@@ -112,13 +142,13 @@ export async function getStaticProps() {
       description: `Zip is a BNPL system allowing customers to split their purchases into 4 interest free installments.
       Users can pay with Zip either through the integrated checkout, or pay anywhere with the Zip app.`,
       highlights: [
-        'Designed, engineered, and deployed FastAPI based API onto a Microsoft Azure based cloud system',
-        'Designed, engineered, and deployed new risk assessment pipeline alongside an in house data team which saw a significate reduced risk exposure',
-        'Designed, enginnered, and deployed a major part of a rewards pipeline assessing rewards eligibility for purchases',
-        'Spearheaded a documentation initiative to define more clearly the input and output of each API endpoint and microservice',
-        'Prevented major outage casued by a third party vendor with defensive coding',
-        'Worked cross team alongside product managers, engineering managers, and data engineers',
-        'Served in an on call rotation to maintain maximum uptime'
+        "Contributed as a vital member of the decisioning team overseeing micro-services dedicated to fraud and risk analysis for the Zip BNPL platform, with a primary focus on the back end. Demonstrated expertise in working within an agile test-driven development environment, strategically aligned with a robust microservice architecture.",
+        "Led the end-to-end design, engineering, and deployment of a FastAPI-based API onto a Microsoft Azure cloud infrastructure which increased efficiency of our risk assessment pipeline",
+        "Spearheaded the successful design, engineering, and implementation of a machine learning-driven risk assessment pipeline in collaboration with the in-house data team. The results showcased a substantial reduction in risk exposure while increasing limits for low risk customers",
+        "Engineered a segment of a new rewards pipeline, evaluating rewards eligibility for prospective new customers' purchases boosting customer acquisition and engagement rates",
+        "Drove a comprehensive documentation initiative, systematically defining the input and output specifications for each API endpoint and microservice. This initiative fostered greater clarity, cohesion, and efficiency across the entire system.",
+        "Proactively averted a major outage that could have been caused by a third-party vendor through the skillful application of defensive coding techniques, ensuring uninterrupted service delivery to users.",
+        "Regularly collaborated with product managers, engineering managers, and data engineers on diverse system-wide projects, facilitating cohesive development and fostering an environment of synergy and innovation."
       ],
       companyLink: 'https://zip.co/us',
       techStack: [
@@ -142,11 +172,11 @@ export async function getStaticProps() {
       chemical companies, with two products that are integreated with each other to have a complete
       system to manage sales and inventory.`,
       highlights: [
-        'Designed and contributed full stack projects for a web based CRM',
-        'Designed and implemented a React based sales analysis module designing the modal and backend analysis calculations based on the Rates-of-Change model from ITR Economics',
-        'Reworked and tested backend sales aggregation systems',
-        "Prepared and presented training seminars for Datacor's annual users conference"
-      ],
+        "Played a pivotal role in developing and executing full-stack projects for Datacor CRM, showcasing innovative and user-friendly solutions.",
+        "Successfully conceptualized and implemented a cutting-edge sales analysis module using React, designing the modal and backend analysis calculations based on the sophisticated Rates-of-Change model from ITR Economics, empowering our customers with data-driven insights on their sales.",
+        "Revamped and rigorously tested backend sales aggregation systems, optimizing their performance and ensuring seamless data flow.",
+        "Prepared and delivered engaging training seminars to our customers during Datacor's annual user conference, providing valuable insights and empowering them with the latest tools and techniques to maximize their experience with the Datacor CRM system."
+    ],
       companyLink: 'https://www.datacor.com/',
       techStack: [
         'Java',
@@ -157,6 +187,44 @@ export async function getStaticProps() {
         'Apache',
         'Ant'
       ]
+    }
+  ];
+
+  const theatre = [
+    {
+      showTitle: "You Can't Take it With You",
+      theatreName: 'Deetjen Theatre',
+      location: 'Montclair, NJ',
+      role: 'Production Manager, Booth Operator',
+      description: 'Special show put on by alumni who were involved in theatre while at MKA.'
+    },
+    {
+      showTitle: "Grease",
+      theatreName: 'Weiss Auditorium',
+      location: 'Montclair, NJ',
+      role: 'Production Stage Manager, Fly Operator',
+      description: 'MKA Winter Musical, 3 sold out performances'
+    },
+    {
+      showTitle: "The Drowsy Chaperone",
+      theatreName: 'Weiss Auditorium',
+      location: 'Montclair, NJ',
+      role: 'Production Stage Manager, Fly Operator',
+      description: 'MKA Winter Musical, 3 sold out performances'
+    },
+    {
+      showTitle: "Once Upon A Mattress",
+      theatreName: 'Weiss Auditorium',
+      location: 'Montclair, NJ',
+      role: 'Fly Operator',
+      description: 'MKA Winter Musical, 3 sold out performances'
+    },
+    {
+      showTitle: "A Funny Thing Happened on the Way to the Forum",
+      theatreName: 'Weiss Auditorium',
+      location: 'Montclair, NJ',
+      role: 'Spot Operator',
+      description: 'MKA Winter Musical, 3 sold out performances'
     }
   ];
 
@@ -178,7 +246,8 @@ export async function getStaticProps() {
   return {
     props: {
       resume,
-      skills
+      skills,
+      theatre
     }
   }
 }
