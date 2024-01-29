@@ -7,10 +7,14 @@
 .cardTitle {
   font-family: var(--font-display);
   color: var(--color-main);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .linkList {
   list-style-type: none;
-  padding-left: 16px
+  padding-left: 16px;
+}
+
+.linkList > li > a{
+  font-size: 1rem !important;
 }
