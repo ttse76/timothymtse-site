@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 export default function Projects({ projects }) {
   const projectCards = projects.map(project => {
     return (
-      <Col lg={3} key={project.title} className="pb-2">
+      <Col lg={4} key={project.title} className="pb-2">
         <ProjectCard {...project} />
       </Col>
     );
@@ -22,17 +22,21 @@ export default function Projects({ projects }) {
   );
 }
 
-export function getServerSideProps() {
-  return { notFound: true };
-}
-
 export async function getStaticProps() {
   const projects = [
     {
       title: 'This Site',
-      description: `This site was build with NextJS, React, and bootstrap.`,
+      description: `Built from scratch with Next.JS, self deployed on a custom cloud server.`,
       links: [
         ['View on GitHub', 'https://github.com/ttse76/timothymtse-site']
+      ]
+    },
+    {
+      title: 'Stable Diffusion Request Builder',
+      description: 'A JavaScript based request builder for the Stable Diffusion API',
+      links: [
+        ['View on GitHub', 'https://github.com/ttse76/stable-diffusion-api-request-builder'],
+        ['Available on NPM', 'https://www.npmjs.com/package/stable-diffusion-api-request-builder']
       ]
     },
     {
