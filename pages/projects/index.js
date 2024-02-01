@@ -32,6 +32,13 @@ export async function getStaticProps() {
       ]
     },
     {
+      title: 'Stable Diffusion Discord Bot',
+      description: `A Discord Bot to interact with the Stable Diffusion API.`,
+      links: [
+        ['View on GitHub', 'hhttps://github.com/ttse76/stable-diffusion-discord']
+      ]
+    },
+    {
       title: 'Stable Diffusion Request Builder',
       description: 'A JavaScript based request builder for the Stable Diffusion API',
       links: [
