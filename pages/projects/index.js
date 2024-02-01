@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 export default function Projects({ projects }) {
   const projectCards = projects.map(project => {
     return (
-      <Col lg={4} key={project.title} className="pb-2">
+      <Col xl={3} lg={6} md={6} key={project.title} className="pb-2">
         <ProjectCard {...project} />
       </Col>
     );
