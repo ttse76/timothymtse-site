@@ -1,6 +1,12 @@
 .paragraph {
   text-align: justify;
-  font-family: var(--font-text);
+}
+
+.paragraphLink {
+  text-decoration: none;
+  color: var(--color-main);
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 .paragraphLink:hover {
