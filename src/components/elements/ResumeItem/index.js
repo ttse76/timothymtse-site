@@ -39,7 +39,7 @@ export default function ResumeItem({
               <span className={`tim-link ${styles.toggle}`} onClick={() => onToggle()}>{activeEventKey === eventKey ? 'See Less' : 'See More'}</span>
             </span>
             <br/>
-            <span style={{ fontStyle: 'italic' }}>{time}</span>
+            <span className={styles.role} style={{ fontStyle: 'italic' }}>{time}</span>
           </div>
         </Card.Header>
         <Accordion.Collapse eventKey={eventKey}>

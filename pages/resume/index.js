@@ -53,7 +53,7 @@ export default function Resume({
           <h1 className="section-header">Education</h1>
           <div>
             <p style={{ ...m0, fontWeight: 'bold', fontSize: '1.5rem' }}>{"Rensselaer Polytechnic Institute '17"}</p>
-            <ul style={{listStyle: 'none', paddingLeft: '0px'}}>
+            <ul style={{ fontSize: "1.2rem", listStyle: 'none', paddingLeft: '0px'}}>
               <li>Degree: B.S. Computer Science</li>
               <li>Member of the Tau Nu chapter of Phi Gamma Delta</li>
               <ul>
@@ -64,7 +64,7 @@ export default function Resume({
           </div>
           <div>
             <p style={{ ...m0, fontWeight: 'bold', fontSize: '1.5rem' }}>{"Montclair Kimberley Academy '13"}</p>  
-            <ul style={{listStyle: 'none', paddingLeft: '0px'}}>
+            <ul style={{ fontSize: "1.2rem", listStyle: 'none', paddingLeft: '0px'}}>
               <li>High School Diploma</li>
               <li>Theatre</li>
               <TheatreCredits credits={theatre} />
@@ -75,10 +75,11 @@ export default function Resume({
       <Row className="pt-5 justify-content-md-center">
         <Col lg={8}>
           <h1 className="section-header">Skills</h1>
-          <p>A brief list of languages and technologies I have worked with:</p>
+          <p style={{ fontSize: '1.2rem' }}>A brief list of languages and technologies I have worked with:</p>
           <ul style={{
             listStyleType: 'none',
-            paddingLeft: '0'
+            paddingLeft: '0',
+            fontSize: '1.2rem'
           }}>
             {skills.map(skill => <li key={skill}>- {skill}</li>)}
           </ul>
@@ -91,7 +92,7 @@ export default function Resume({
 const TheatreCredits = ({ credits }) => {
   const showTitle = { fontStyle: 'italic', fontWeight: 'bold' };
   const comps = credits.map((credit, i) => {
-    return (<ul style={{ listStyle: 'none', paddingBottom: '15px' }} key={`show${i}`}>
+    return (<ul style={{ listStyle: 'none', paddingBottom: '15px', fontSize: '1.1rem' }} key={`show${i}`}>
       <li style={showTitle}>{credit.showTitle}</li>
       <li>{credit.theatreName}, {credit.location}</li>
       <li>Role: {credit.role}</li>

@@ -2,6 +2,7 @@
   background-color: var(--color-bg);
   border-color: var(--color-bg);
   border: none;
+  font-size: 1.2rem;
 }
 
 .card {
@@ -16,10 +17,14 @@
 
 .companyName {
   color: var(--color-main);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-decoration: none;
   transition: 0.2s;
+}
+
+.role {
+  font-size: 1.2rem;
 }
 
 .companyName:hover {

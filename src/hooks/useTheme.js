@@ -40,15 +40,15 @@ export function useTheme() {
 }
 
 const palette1 = {
-  colorMainDark: '#0BD3E5',
-  colorMainLight: '#0BD3E5',
-  colorMainHoverDark: '#ddfcff',
-  colorMainHoverLight: '#009088',
+  colorMainDark: '#01ca62',
+  colorMainLight: '#01ca62',
+  colorMainHoverDark: '#58fca8',
+  colorMainHoverLight: '#58fca8',
   colorTextDark: '#bababa',
   colorTextLight: 'black',
-  colorBgDark: '#292929',
+  colorBgDark: '#002D62',
   colorBgLight: '#FFF5E5',
-  fontDisplay: "'Poppins', sans-serif",
-  fontText: "'Roboto', sans-serif",
-  fontUrl: "https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
+  fontDisplay: "'Kode Mono', monospace",
+  fontText: "'Inconsolata', monospace",
+  fontUrl: "https://fonts.googleapis.com/css2?family=Kode+Mono:wght@700&family=Inconsolata:wght@600&display=swap"
 };
