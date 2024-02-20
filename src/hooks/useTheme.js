@@ -50,5 +50,5 @@ const palette1 = {
   colorBgLight: '#FFF5E5',
   fontDisplay: "'Kode Mono', monospace",
   fontText: "'Inconsolata', monospace",
-  fontUrl: "https://fonts.googleapis.com/css2?family=Kode+Mono:wght@700&family=Inconsolata:wght@600&display=swap"
+  fontUrl: "https://fonts.googleapis.com/css2?family=Kode+Mono:wght@200..900&family=Inconsolata:wght@600&display=swap"
 };

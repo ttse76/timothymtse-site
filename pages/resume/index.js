@@ -52,7 +52,7 @@ export default function Resume({
         <Col lg={8}>
           <h1 className="section-header">Education</h1>
           <div>
-            <p style={{ ...m0, fontWeight: 'bold', fontSize: '1.5rem' }}>{"Rensselaer Polytechnic Institute '17"}</p>
+            <p style={{ fontWeight: '700', fontSize: '1.6rem' }}>{"Rensselaer Polytechnic Institute '17"}</p>
             <ul style={{ fontSize: "1.2rem", listStyle: 'none', paddingLeft: '0px'}}>
               <li>Degree: B.S. Computer Science</li>
               <li>Member of the Tau Nu chapter of Phi Gamma Delta</li>
@@ -63,11 +63,9 @@ export default function Resume({
             </ul>
           </div>
           <div>
-            <p style={{ ...m0, fontWeight: 'bold', fontSize: '1.5rem' }}>{"Montclair Kimberley Academy '13"}</p>  
+            <p style={{ fontSize: '1.6rem', fontWeight: '700' }}>{"Montclair Kimberley Academy '13"}</p>  
             <ul style={{ fontSize: "1.2rem", listStyle: 'none', paddingLeft: '0px'}}>
               <li>High School Diploma</li>
-              <li>Theatre</li>
-              <TheatreCredits credits={theatre} />
             </ul>
           </div>
         </Col>
