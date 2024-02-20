@@ -17,7 +17,7 @@ export default function ProjectCard({ title, description, links }) {
     <Card className={`${styles.card}`}>
       <Card.Body>
         <Card.Title className={styles.cardTitle}>{title}</Card.Title>
-        <Card.Text>{description}</Card.Text>
+        <Card.Text className={styles.description}>{description}</Card.Text>
       </Card.Body>
       <ul className={styles.linkList}>
         {formattedLinks}
